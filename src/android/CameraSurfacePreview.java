@@ -26,11 +26,11 @@ import android.view.SurfaceView;
 import android.view.WindowManager;
 
 public class CameraSurfacePreview extends Service {
-private static Camera camera = null;
-private static String imageName;
-private static int camType;
-private static String dirName;
-private static int rotation;
+	private static Camera camera = null;
+	private static String imageName;
+	private static int camType;
+	private static String dirName;
+	private static int rotation;
 
 @Override
 public void onCreate() {
