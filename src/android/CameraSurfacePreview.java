@@ -1,6 +1,6 @@
 //Code from  sergio-mejia-tierconnect-com 
 // https://github.com/an-rahulpandey/cordova-plugin-camerapicturebackground/issues/4
-
+package me.rahul.plugins.camerapicturebackground;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
