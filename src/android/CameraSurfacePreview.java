@@ -1,7 +1,6 @@
-//Code from  sergio-mejia-tierconnect-com 
-// https://github.com/an-rahulpandey/cordova-plugin-camerapicturebackground/issues/4
-package me.rahul.plugins.camerapicturebackground;
-import java.io.File;
+ package me.rahul.plugins.camerapicturebackground;
+ 
+ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -26,11 +25,11 @@ import android.view.SurfaceView;
 import android.view.WindowManager;
 
 public class CameraSurfacePreview extends Service {
-	private static Camera camera = null;
-	private static String imageName;
-	private static int camType;
-	private static String dirName;
-	private static int rotation;
+private static Camera camera = null;
+private static String imageName;
+private static int camType;
+private static String dirName;
+private static int rotation;
 
 @Override
 public void onCreate() {
@@ -232,7 +231,6 @@ private static void debugMessage(String message) {
 public IBinder onBind(Intent intent) {
     return null;
 }
-}
 
 @Override
 public void onDestroy(){
@@ -241,4 +239,6 @@ public void onDestroy(){
         camera.release();
         camera = null;
     }
+}
+
 }
