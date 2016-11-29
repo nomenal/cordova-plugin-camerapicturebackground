@@ -104,8 +104,13 @@ static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
 
                      }
             Log.d("CordovaLog", "SMS optimalSize DONE! ");
+            List<Size> pictureSizes = params.getSupportedPictureSizes();
+            Size pictureSize = getBestPreviewSize(pictureSizes, 1920, 1080);
+            if (pictureSize != null) {
+                params.setPictureSize(pictureSize.width, pictureSize.height);
+            }
 
-            params.setJpegQuality(40);
+            params.setJpegQuality(100);
             /*  Commented because it was causing critical error in some devices (i.e. Huawei)
             if (params.getSceneMode() != null) {
                 params.setSceneMode(Parameters.SCENE_MODE_STEADYPHOTO);
