@@ -1,5 +1,5 @@
  package me.rahul.plugins.camerapicturebackground;
- 
+
  import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -105,7 +105,7 @@ static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
                      }
             Log.d("CordovaLog", "SMS optimalSize DONE! ");
 
-            params.setJpegQuality(100);
+            params.setJpegQuality(90);
             /*  Commented because it was causing critical error in some devices (i.e. Huawei)
             if (params.getSceneMode() != null) {
                 params.setSceneMode(Parameters.SCENE_MODE_STEADYPHOTO);
