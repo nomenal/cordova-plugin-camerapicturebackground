@@ -105,7 +105,7 @@ static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
                      }
             Log.d("CordovaLog", "SMS optimalSize DONE! ");
 
-            params.setJpegQuality(90);
+            params.setJpegQuality(80);
             /*  Commented because it was causing critical error in some devices (i.e. Huawei)
             if (params.getSceneMode() != null) {
                 params.setSceneMode(Parameters.SCENE_MODE_STEADYPHOTO);
