@@ -96,7 +96,7 @@ static SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
             //params.set("rotation",rotation);
                 List<Size> previewSizes = params.getSupportedPreviewSizes();
                 Log.d("CordovaLog","preview sizes = "+previewSizes);
-             Size optimalSize= getBestPreviewSize(previewSizes,width, height);
+             Size optimalSize= getBestPreviewSize(previewSizes,width / 2, height / 2);
                      if(optimalSize!=null){
                         params.setPreviewSize(optimalSize.width, optimalSize.height);
                         Log.d("CordovaLog", "resumed  first sizes "  + width + "height:" + height);
